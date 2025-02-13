@@ -1,0 +1,79 @@
+/* เพิ่มการตกแต่งสำหรับข้อความในพื้นหลัง */
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* การจัดตำแหน่งและขนาดของภาพพื้นหลัง */
+  .bg-image {
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+  }
+  
+  /* การจัดเรียงของรีวิวให้เป็นแถวที่สามารถเลื่อนดูได้ */
+  .reviews-slider {
+    margin: 0 auto;
+    width: 90%;
+  }
+  
+  .review-card {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    color: #555;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+ /* การปรับขนาดของรูปในรีวิวให้เป็นขนาด 2 นิ้ว */
+.card-img-top {
+    width: 100%;
+    height: auto; /* ให้ความสูงปรับตามอัตราส่วน */
+    max-width: 512px; /* ขนาดกว้างสุด 512px (ประมาณ 2 นิ้ว) */
+    max-height: 288px; /* ขนาดสูงสุด 288px (ประมาณ 2 นิ้ว) */
+    object-fit: cover; /* ทำให้รูปไม่ผิดสัดส่วน */
+    margin: 0 auto; /* จัดให้รูปอยู่กลาง */
+  }
+  
+  /* ปรับให้การ์ดมีขนาดที่พอเหมาะ */
+  .review-card {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+    width: 220px; /* กว้าง 220px ให้เหมาะสมกับภาพ */
+    height: 320px; /* ความสูงของการ์ด */
+  }
+  .restaurant-intro h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .restaurant-intro p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
