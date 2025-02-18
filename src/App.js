@@ -19,7 +19,7 @@ const App = () => {
         {/* Content Section */}
         <div className="main-content">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/1111" element={<Home />} />
             <Route path="/menu" element={<Menu />} />
             <Route path="/logout" element={<Logout />} />
           </Routes>
