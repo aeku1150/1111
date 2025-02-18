@@ -1,0 +1,62 @@
+/* ใส่ฟอนต์ Prompt จาก Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap');
+
+/* ปรับพื้นหลังของ footer */
+footer {
+  background-color: #ff0303; /* สีพื้นหลัง */
+  font-family: 'Prompt', sans-serif; /* ใช้ฟอนต์ Prompt */
+}
+
+/* ปรับข้อความใน footer */
+footer p {
+  margin-bottom: 10px;
+}
+
+footer .container {
+  padding: 20px;
+}
+
+/* ปรับขนาดข้อความสำหรับชื่อร้าน */
+footer .mb-2 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase; /* เพิ่มให้ตัวอักษรเป็นตัวพิมพ์ใหญ่ */
+}
+
+/* ปรับข้อความสำหรับข้อมูลต่าง ๆ */
+footer .mb-2 {
+  font-size: 14px;
+  color: white; /* สีขาว */
+}
+
+/* ปรับขนาดข้อความสำหรับปี */
+footer .text-white {
+  font-size: 12px;
+}
+
+/* ปรับลิงก์โซเชียล */
+footer .social-links a {
+  font-size: 18px;
+  color: white;
+  transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+  color: #ff5e00; /* เปลี่ยนสีเมื่อ hover */
+}
+
+/* ปรับตำแหน่งของไอคอนโซเชียล */
+footer .social-links i {
+  margin-right: 8px;
+}
+
+/* เพิ่มความกว้างสำหรับหน้าจอเล็ก */
+@media (max-width: 768px) {
+  footer .container {
+    padding: 10px;
+  }
+
+  footer .social-links a {
+    font-size: 16px;
+  }
+}

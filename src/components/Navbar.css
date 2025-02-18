@@ -1,18 +1,53 @@
+/* ใส่ฟอนต์ Prompt จาก Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap');
+
+/* ปรับพื้นหลังของ navbar พร้อมกับ transition */
 .navbar {
+  background-color: #ff1900; /* สีพื้นหลัง */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* เงาของ navbar */
+  font-family: 'Prompt', sans-serif; /* ใช้ฟอนต์ Prompt */
   transition: background-color 0.3s ease-in-out;
 }
 
+/* ปรับไอคอนปุ่ม toggler */
 .navbar-toggler-icon {
   background-color: white;
 }
 
+/* ปรับขนาดและ padding ของลิงก์ในเมนู */
 .navbar-nav .nav-link {
   font-size: 16px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 500; /* ใช้ตัวหนาเล็กน้อย */
+  transition: background-color 0.3s, color 0.3s ease-in-out; /* เอฟเฟกต์การเปลี่ยนสี */
 }
 
+/* เพิ่ม effect เมื่อ hover บนลิงก์ */
 .navbar-nav .nav-link:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2); /* สีพื้นหลังเมื่อ hover */
+  color: #f39c12; /* เปลี่ยนสีตัวอักษรเมื่อ hover */
   border-radius: 5px;
+}
+
+/* ปรับขนาดของ navbar-brand (ชื่อแบรนด์) */
+.navbar-brand {
+  font-size: 1.7rem; /* ขนาดใหญ่ขึ้น */
+  font-weight: bold; /* ตัวหนา */
+  letter-spacing: 1px; /* การจัดระยะห่างตัวอักษร */
+  color: white; /* สีตัวอักษร */
+  transition: color 0.3s; /* เอฟเฟกต์การเปลี่ยนสี */
+}
+
+.navbar-brand:hover {
+  color: #f39c12; /* เปลี่ยนสีเมื่อ hover */
+}
+
+/* ปรับให้ navbar ตอบสนองได้ดีบนมือถือ */
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+    font-size: 14px; /* ปรับขนาดฟอนต์ให้เล็กลงบนหน้าจอเล็ก */
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }

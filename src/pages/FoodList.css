@@ -1,0 +1,152 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Prompt', sans-serif;  /* เพิ่มฟอนต์ Prompt ให้กับทั้งเว็บไซต์ */
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  font-family: 'Prompt', sans-serif;  /* เพิ่มฟอนต์ Prompt สำหรับเนื้อหาภายในป๊อปอัพ */
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-family: 'Prompt', sans-serif;  /* ฟอนต์สำหรับหัวข้อ */
+}
+
+.order-item-name {
+  font-weight: bold;
+  font-family: 'Prompt', sans-serif;  /* ฟอนต์สำหรับชื่อเมนู */
+}
+
+.order-item-price {
+  color: #d32f2f;
+  font-weight: bold;
+  font-family: 'Prompt', sans-serif;  /* ฟอนต์สำหรับราคาของเมนู */
+}
+
+.total-price {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+  font-family: 'Prompt', sans-serif;  /* ฟอนต์สำหรับราคาสรุป */
+}
+
+.confirm-btn, .close-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Prompt', sans-serif;  /* ฟอนต์สำหรับปุ่ม */
+}
+
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.order-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+.order-item-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.order-item-details {
+  margin-left: 15px;
+  flex-grow: 1;
+}
+
+.order-item-name {
+  font-weight: bold;
+}
+
+.order-item-price {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+.total-price {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.popup-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.confirm-btn, .close-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.confirm-btn {
+  background-color: #1976d2;
+  color: white;
+  width: 48%;
+}
+
+.close-btn {
+  background-color: #ff6f61;
+  color: white;
+  width: 48%;
+}
+
+.confirm-btn:hover {
+  background-color: #1565c0;
+}
+
+.close-btn:hover {
+  background-color: #e85d4a;
+}
